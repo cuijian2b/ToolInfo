@@ -21,5 +21,17 @@ finish： 运行程序，直到当前函数完成返回，并打印函数返回�
 call 函数(参数)：调用程序中可见的函数，并传递“参数”，如：call gdb_test(55)；
 print、whatis命令查看变量值、属性
 
-# 3、gdb调试运行中的程序
+# 4、查看运行信息
+where/bt ：当前运行的堆栈列表；
+bt backtrace 显示当前调用堆栈
+up/down 改变堆栈显示的深度
+set args 参数:指定运行时的参数
+show args：查看设置好的参数
+info program： 来查看程序的是否在运行，进程号，被暂停的原因。
+原文链接：https://blog.csdn.net/niyaozuozuihao/article/details/91802994
+
+
+# 5、gdb调试运行中的程序
 attach
+gdb out core
+gdb下输入where

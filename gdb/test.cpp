@@ -7,7 +7,8 @@ int main()
 {
     cout << "hello world" << endl;
     while (true) {
-        /* code */
+        int a = 10;
+        int b = a;
     }
     
     return 0;
